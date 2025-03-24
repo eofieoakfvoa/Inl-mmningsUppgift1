@@ -1,6 +1,12 @@
+momsPercent = "" 
 def ChooseAlternatives():
+    Price = "" #detta ser jätte skumt ut???
     print("Hej snälla skriv först ett pris")
-    Price = input()
+    while not isPriceValid(Price):
+        Price = input()
+        Price = float(Price)
+        print(type(Price))
+
     print("moms I percent alltså t.ex '25'")
     momsPercent = input()
     print(Price, momsPercent)
@@ -18,7 +24,8 @@ def ApplyMoms(price : float, moms : float):
     return price, moms, appliedMomsPrice 
 
 def isPriceValid(price):
-    if type(price) != float or int:
+    print(float)
+    if type(price) != float or type(price) != int:
         print("The price of : ", price, " is not a valid number :(")
         return False
     return True #ksk lägga till så price inte kan vara negativt?
