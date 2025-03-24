@@ -11,7 +11,8 @@ def ChooseAlternatives():
     momsPercent = input()
     print(Price, momsPercent)
     appliedMomsPrice = ApplyMoms(Price, momsPercent)
-    print("Priset :", "", " med applicerad moms av ", "", " Är lika med : ", "")
+    print("Priset :", Price, " med applicerad moms av ", momsPercent, "% Är lika med : ", appliedMomsPrice)
+
 def ApplyMoms(price : float, moms : float):
     if not isPriceValid(price):
         print("aa ",type(price))
@@ -21,7 +22,7 @@ def ApplyMoms(price : float, moms : float):
         return
     newMoms = convertMomsToDecimal(moms)
     appliedMomsPrice = price * (1 + newMoms)
-    return price, moms, appliedMomsPrice 
+    return appliedMomsPrice 
 
 def isPriceValid(price):
     print(float)
