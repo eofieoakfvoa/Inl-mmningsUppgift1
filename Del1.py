@@ -24,7 +24,7 @@ def ChooseAlternatives():
 
     input()
 
-def _ApplyMoms(price : float, moms : float):
+def _ApplyMoms(price : float, moms : float): #Även fast det inte finns privata och protected saker i python så tycker jag att det är mysigt och ger ändå lite mer information
     newMoms = _convertMomsToDecimal(moms)
     appliedMomsPrice = price * (1 + newMoms)
     return appliedMomsPrice 

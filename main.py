@@ -16,7 +16,8 @@ def main():
         from Del1 import ChooseAlternatives
         ChooseAlternatives()
     if Alternative == "2":
-        pass
+        from Del2 import Start
+        Start()
     if Alternative == "3":
         pass
 main()
