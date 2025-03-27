@@ -6,20 +6,23 @@ import math
 def Start():
     print("Hej skriv ett ord eller mening för att lista ut ifall det är en palindrom")
     message = input()
-    CheckIfSentenceIsPalindrome(message)
+    bool = CheckIfSentenceIsPalindrome(message)
+    if bool:
+        print("Ja ", message, " Är en palindrom :)")
+    else:
+        print("Nej :(")
 
 
 def CheckIfSentenceIsPalindrome(message):
     
-    messageWithoutSpaces = message.replace(" ", "")
+    messageWithoutSpaces = message.replace(" ", "") # vi vill ha utan spaces för t.ex ola salo
+    #ingentligen borde jag ta bort alla täcken som inte är bokstäver där ifall man skriver t.ex!., kommer det returna false
+    #men då behöver jag göra sån där skum filter sak med massa symboler som ser komplicerad och läskigt ut
     LengthOfString = len(messageWithoutSpaces)
-    HalfRoundedDown = math.floor(LengthOfString / 2)
-    print(messageWithoutSpaces)
+    HalfRoundedDown = math.floor(LengthOfString / 2) #ifall den har en single mitten så är den automatisk samma bokstav så finns ingen poäng att kolla den
     for i in range (HalfRoundedDown):
-        if message[i] == message[LengthOfString-1-i]:
-            print("Same Letter")
+        if messageWithoutSpaces[i] != messageWithoutSpaces[LengthOfString-1-i]: #den sa out of range så jag tog -1 och det fungerar jag gissar det är för båda räknar inte från 0 i början eller nått
+            return False #såfort någon är false så finns det ingen poäng att att kolla rästen 
+        
+    return True
     
-        
-        
-        
-Start()

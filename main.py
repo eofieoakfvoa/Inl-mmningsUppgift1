@@ -19,5 +19,6 @@ def main():
         from Del2 import Start
         Start()
     if Alternative == "3":
-        pass
+        from Del3 import Start
+        Start()
 main()
