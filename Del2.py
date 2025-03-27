@@ -5,10 +5,10 @@ def Start():
     print("Hej skriv en mening för att lista ut hur många stora och små bockstäver den har")
     message = input()
 
-    resultTupel = GetUpperAndLowerCaseAmount(message)
+    resultTupel = _GetUpperAndLowerCaseAmount(message)
     print("antal små bokstäver är : ",resultTupel[0], "(Med mellanslag, och andra tecken som .,-) antal stora är : ", resultTupel[1])
 
-def GetUpperAndLowerCaseAmount(message : str):
+def _GetUpperAndLowerCaseAmount(message : str):
     AmountOfUpper = 0
     AmountOfLower = 0
     for char in message:

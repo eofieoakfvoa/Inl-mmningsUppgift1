@@ -6,14 +6,13 @@ import math
 def Start():
     print("Hej skriv ett ord eller mening för att lista ut ifall det är en palindrom")
     message = input()
-    bool = CheckIfSentenceIsPalindrome(message)
-    if bool:
+    if _CheckIfSentenceIsPalindrome(message):
         print("Ja '", message, "' Är en palindrom :)")
     else:
         print("Nej :(")
 
 
-def CheckIfSentenceIsPalindrome(message):
+def _CheckIfSentenceIsPalindrome(message):
     
     messageWithoutSpaces = message.replace(" ", "").lower() # vi vill ha utan spaces för t.ex ola salo, Lower() för t.ex annars hade Anna inte fungerat
     #ingentligen borde jag ta bort alla täcken som inte är bokstäver där ifall man skriver t.ex!., kommer det returna false

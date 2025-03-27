@@ -22,8 +22,6 @@ def Start():
 
     print("Priset :", Price, " med applicerad moms av ", momsPercent, "% Är lika med : ", round(appliedMomsPrice, 2))
 
-    input()
-
 def _ApplyMoms(price : float, moms : float): #Även fast det inte finns privata och protected saker i python så tycker jag att det är mysigt och ger ändå lite mer information
     newMoms = _convertMomsToDecimal(moms)
     appliedMomsPrice = price * (1 + newMoms)
