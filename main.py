@@ -17,11 +17,6 @@ def main():
         #Det hade nog varit smartare att sätta alternativen i en Dictionary sen göra Dictionary[alternativ].Start() som skulle kunna runna coden men jag lowkey pallar inte
         #Där Dictionary innehåller en index som går till modulen och callar start, då alla filer förväntar innehålla en start() function
         #och eftersom jag vet att jag inte behöver expandera projectet mer än 3 så borde det vara okej att hard coda in detta och att uppgiften är på E nivå :P
-        if Alternative == "1": #kan defenletivt göra detta till 1 line
-            featuresList[Alternative].Start()
-        if Alternative == "2":
-            featuresList[Alternative].Start()
-        if Alternative == "3":
-            featuresList[Alternative].Start()
+        featuresList[Alternative].Start()
         input("Klicka Enter för att fortsätta")
 main()
