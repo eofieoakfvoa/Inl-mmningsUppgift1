@@ -6,7 +6,7 @@ def Start():
     message = input()
 
     resultTupel = GetUpperAndLowerCaseAmount(message)
-    print("antal små bokstäver är : ",resultTupel[0], "(Med mellanslag) antal stora är : ", resultTupel[1])
+    print("antal små bokstäver är : ",resultTupel[0], "(Med mellanslag, och andra tecken som .,-) antal stora är : ", resultTupel[1])
 
 def GetUpperAndLowerCaseAmount(message : str):
     AmountOfUpper = 0

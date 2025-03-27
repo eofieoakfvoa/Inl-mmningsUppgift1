@@ -8,14 +8,14 @@ def Start():
     message = input()
     bool = CheckIfSentenceIsPalindrome(message)
     if bool:
-        print("Ja ", message, " Är en palindrom :)")
+        print("Ja '", message, "' Är en palindrom :)")
     else:
         print("Nej :(")
 
 
 def CheckIfSentenceIsPalindrome(message):
     
-    messageWithoutSpaces = message.replace(" ", "") # vi vill ha utan spaces för t.ex ola salo
+    messageWithoutSpaces = message.replace(" ", "").lower() # vi vill ha utan spaces för t.ex ola salo, Lower() för t.ex annars hade Anna inte fungerat
     #ingentligen borde jag ta bort alla täcken som inte är bokstäver där ifall man skriver t.ex!., kommer det returna false
     #men då behöver jag göra sån där skum filter sak med massa symboler som ser komplicerad och läskigt ut
     LengthOfString = len(messageWithoutSpaces)

@@ -1,4 +1,4 @@
-def ChooseAlternatives():
+def Start():
     Price = "" #detta ser jätte skumt ut men fungerar :p
     momsPercent = "" 
     print("Hej snälla skriv först ett pris")
