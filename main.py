@@ -3,7 +3,7 @@ import Del2
 import Del3
 running = None
 def main():
-    running = true
+    running = True
     featuresList = {"1" :Del1, "2" :Del2, "3" :Del3}
     while running:
         print(
