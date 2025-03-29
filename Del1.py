@@ -41,5 +41,5 @@ def _IsMomsValid(moms):
         return False
     return True
 
-def _ConvertMomsToDecimal(moms):
+def _ConvertMomsToDecimal(moms): #gör så att när t.ex 25 blir till 0.25 så man faktiskt kan göra matten för att räkna ut 
     return moms * 0.01
