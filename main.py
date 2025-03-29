@@ -1,3 +1,5 @@
+#jag hoppas mina kommentarer räcker jag är inte så jätte bra på att kommentera och föredrar att skriva kod som är lätt att läsa
+
 import Del1
 import Del2
 import Del3
